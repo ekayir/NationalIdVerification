@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "National ID Verification Home Page";
+}
+<form method="post">
+    <table>
+        <tr>
+            <td>National ID</td>
+            <td><input type="text" id="id" name="id" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" id="firstName" name="firstName" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" id="lastName" name="lastName" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Year of Birth</td>
+            <td><input type="text" id="yearOfBirth" name="yearOfBirth" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit">Check!</button></td>
+        </tr>
+    </table>
+</form>
+<span>@ViewBag.IsNationalIdVerified</span>
